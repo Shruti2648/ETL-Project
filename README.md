@@ -6,7 +6,7 @@ The New York Tuition Assistance Program (TAP) is a financial aid program for stu
 
 ## Data Extraction
 
-We used two datasets provided by NYC Open Data (an online repository of data published by New York government agencies). The first dataset contains information on TAP recipients by college, sector group, and level of study. The second dataset contains information on TAP recipients by income, age group, and program information. Both datasets have several fields in common, including:
+We used two datasets provided by [NYC Open Data](https://opendata.cityofnewyork.us/), which is an online repository of data published by New York City agencies. The [first dataset](https://data.ny.gov/Education/Tuition-Assistance-Program-TAP-Recipients-Dollars-/ich7-7ewa) contains information on TAP recipients by college, sector group, and level of study. The [second dataset](https://data.ny.gov/Education/Tuition-Assistance-Program-TAP-Recipients-Dollars-/2t78-bs45) contains information on TAP recipients by income, age group, and program information. Both datasets have several fields in common, including:
 
 * TAP Level of Study: the level of the educational program the student is enrolled in (4 year undergrad, 2 year undergrad, etc...)
 * Sector Type: the sector of the college the student is enrolled in (private or public)
@@ -27,7 +27,7 @@ Finally, both cleaned dataframes were saved as csv files in the project folder i
 
 ## Data Loading
 
-This phase of the project consisted of creating the PostgreSQL database and loading the data. Our first step was to design the database using Quick Database Diagrams, which is an online diagram tool. We created two tables: tap_college and tap_income. Tap_college would hold the data in tap_college_df, while tap_income would hold the data in tap_income_df. We gave column headers the same names as the column headers in our cleaned dataframes. We created a relationship between the tap_sector_group columns in both tables, to illustrate how the tables can be joined.
+This phase of the project consisted of creating the PostgreSQL database and loading the data. Our first step was to design the database using Quick Database Diagrams, which is an online diagram tool. We created two tables: tap_college and tap_income. Tap_college would hold the data in tap_college_df, while tap_income would hold the data in tap_income_df. We gave the column headers the same names as the column headers in our cleaned dataframes. We created a relationship between the tap_sector_group columns in both tables, to illustrate how the tables can be joined.
 
 Below is an image of the database design. It is saved in the project folder as ERD_image.png.
 
