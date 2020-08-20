@@ -27,7 +27,10 @@ Finally, both cleaned dataframes were saved as csv files in the project folder i
 
 ## Data Loading
 
-This phase of the project consisted of creating the PostgreSQL database and loading the data. Our first step was to design the database using Quick Database Diagrams, which is an online diagram tool. We created two tables: tap_college and tap_income. Tap_college would hold the data in tap_college_df, while tap_income would hold the data in tap_income_df. We gave column headers the same names as the column headers in our cleaned dataframes. We created a relationship between the tap_sector_group columns in both tables, to illustrate how the tables have some data in common. This is useful for joins.
+This phase of the project consisted of creating the PostgreSQL database and loading the data. Our first step was to design the database using Quick Database Diagrams, which is an online diagram tool. We created two tables: tap_college and tap_income. Tap_college would hold the data in tap_college_df, while tap_income would hold the data in tap_income_df. We gave column headers the same names as the column headers in our cleaned dataframes. We created a relationship between the tap_sector_group columns in both tables, to illustrate how the tables have some data in common.
 
 Below is an image of the database design. It is saved in the project folder as ERD_image.png.
 
+![NYC TAP Database Design](ERD_image.png)
+
+Next, we created the tap_db database in pgAdmin, and ran queries to create the tables. The queries can be viewed in the query.sql file in the project folder. After this, we returned to our Python notebook and used SQL Alchemy to establish a connection to our database. We used Pandas and the SQL Alchemy engine to load the data from both dataframes into their respective tables. Finally, we queried both tables to ensure that the data was loaded correctly. This concludes the final phase of the project.
