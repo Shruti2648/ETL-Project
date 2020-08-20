@@ -33,4 +33,4 @@ Below is an image of the database design. It is saved in the project folder as E
 
 ![NYC TAP Database Design](ERD_image.PNG)
 
-Next, we created the tap_db database in pgAdmin, and ran queries to create the tables. The queries can be viewed in the query.sql file in the project folder. After this, we returned to our Python notebook and used SQL Alchemy to establish a connection to our database. We used Pandas and the SQL Alchemy engine to load the data from both dataframes into their respective tables. Finally, we queried both tables to ensure that the data was loaded correctly. This concludes the final phase of the project.
+Next, we created the tap_db database in pgAdmin, and ran queries to create the tables. The queries can be viewed in the query.sql file in the project folder. We then returned to our Python notebook and used SQL Alchemy to establish a connection to our database. We used Pandas and the SQL Alchemy engine to load the data from both dataframes into their respective tables. Finally, we queried both tables to ensure that the data was loaded correctly. This concludes the final phase of the project.
